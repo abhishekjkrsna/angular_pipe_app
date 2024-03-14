@@ -1,0 +1,13 @@
+<article>
+    @if (normalOrJson === 'json') {
+    <h3>{{ object | json }}</h3>
+    } @else {
+    <h3>{{ object }}</h3>
+    }
+    <mat-radio-group aria-label="Select an option" [(ngModel)]="normalOrJson">
+        <mat-radio-button value="normal">Normal</mat-radio-button>
+        <mat-radio-button value="json">JSON</mat-radio-button>
+    </mat-radio-group>
+    <textarea name="" id="" cols="30" rows="10" [(ngModel)]="object"></textarea>
+    <button (click)="reset()">Reset</button>
+</article>

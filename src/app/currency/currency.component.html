@@ -1,0 +1,32 @@
+@switch (currency) {
+@case ('USD') {
+<p>{{ value | currency: 'USD' }}</p>
+}
+@case ('EUR') {
+<p>{{ value | currency: 'EUR' }}</p>
+}
+@case ('GBP') {
+<p>{{ value | currency: 'GBP' }}</p>
+}
+@case ('INR') {
+<p>{{ value | currency: 'INR': 'symbol' : '2.2-2' : 'en-IN' }}</p>
+}
+@case ('CHF') {
+<p>{{ value | currency: 'CHF' }}</p>
+}
+@case ('JPY') {
+<p>{{ value | currency: 'JPY' }}</p>
+}
+@default {
+<p>{{ value }}</p>
+}
+}
+<mat-radio-group aria-label="Select an option" [(ngModel)]="currency">
+    <mat-radio-button value="USD">USD</mat-radio-button>
+    <mat-radio-button value="EUR">EUR</mat-radio-button>
+    <mat-radio-button value="GBP">GBP</mat-radio-button>
+    <mat-radio-button value="INR">INR</mat-radio-button>
+    <mat-radio-button value="CHF">CHF</mat-radio-button>
+    <mat-radio-button value="JPY">JPY</mat-radio-button>
+    <mat-radio-button value="">None</mat-radio-button>
+</mat-radio-group>

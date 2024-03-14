@@ -1,0 +1,82 @@
+<table  class="full-width-table">
+    <caption>Today is {{ dateObj | date }}</caption>
+    <thead>
+        <tr>
+            <th>S.N</th>
+            <th>type</th>
+            <th>value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>short</td>
+            <td>{{ dateObj | date:'short'}}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>medium</td>
+            <td>{{ dateObj | date:'medium'}}</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>long</td>
+            <td>{{ dateObj | date:'long'}}</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>full</td>
+            <td>{{ dateObj | date:'full'}}</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>shortDate</td>
+            <td>{{ dateObj | date:'shortDate'}}</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>mediumDate</td>
+            <td>{{ dateObj | date:'mediumDate'}}</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>longDate</td>
+            <td>{{ dateObj | date:'longDate'}}</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>fullDate</td>
+            <td>{{ dateObj | date:'fullDate'}}</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>shortTime</td>
+            <td>{{ dateObj | date:'shortTime'}}</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>fullTime</td>
+            <td>{{ dateObj | date:'fullTime'}}</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>mediumTime</td>
+            <td>{{ dateObj | date:'mediumTime'}}</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>longTime</td>
+            <td>{{ dateObj | date:'longTime'}}</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Month</td>
+            <td>{{ dateObj | date:'MMMM'}}</td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Standard</td>
+            <td>{{ dateObj | date:'dd/MM/yy'}}</td>
+        </tr>
+    </tbody>
+</table>

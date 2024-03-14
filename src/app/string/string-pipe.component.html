@@ -1,0 +1,15 @@
+@if (selected === 'uppercase') {
+<p>{{ text | uppercase}}</p>
+} @else if (selected === 'lowercase') {
+<p>{{ text | lowercase}}</p>
+} @else if (selected === 'titlecase') {
+<p>{{ text | titlecase}}</p>
+} @else {
+<p>{{text}}</p>
+}
+<mat-radio-group aria-label="Select an option" [(ngModel)]="selected">
+    <mat-radio-button value="uppercase">Upper Case</mat-radio-button>
+    <mat-radio-button value="lowercase">Lower Case</mat-radio-button>
+    <mat-radio-button value="titlecase">Title Case</mat-radio-button>
+    <mat-radio-button value="">None</mat-radio-button>
+</mat-radio-group>

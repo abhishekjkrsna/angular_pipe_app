@@ -1,0 +1,10 @@
+<span>
+    <h1>Object : {{ object | json}}</h1>
+    @for (item of object |keyvalue; track $index) {
+    <div>{{ item.key }}:{{ item.value }}</div>
+    }
+    <h1>Map: {{ map}}</h1>
+    @for (item of map |keyvalue; track $index) {
+    <div>{{ item.key }}:{{ item.value }}</div>
+    }
+</span>
